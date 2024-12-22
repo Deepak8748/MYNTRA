@@ -19,7 +19,7 @@ const Fetchitems = () => {
 
     dispatch(fetchStatusActions.markFetchingStart())
 
-    fetch('http://localhost:8080/items',{signal})
+    fetch('https://myntra8554.onrender.com/items',{signal})
       .then(res => res.json())
       .then(({items}) => {
         dispatch(fetchStatusActions.markFetchDone())
